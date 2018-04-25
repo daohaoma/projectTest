@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/modal.css">
+    <title>弹框</title>
+</head>
+<body>
+    <a class="button border-green button-little" onclick="javasrcipt:ShowDiv('MyDiv','fade')" >新增二级分类</a>  
+
+
+    <!--弹出层时背景层DIV---start-->  
+<div id="fade" class="black_overlay"></div>  
+<div id="MyDiv" class="white_content">  
+    <div style="cursor: default; margin-top:10px; margin-bottom:20px;">
+        <span class="white_content_title">添加分销佣金</span>
+        <span class="white_content_close" onclick="CloseDiv2()">×</span>  
+    </div>
+    <div class="first_white_input">
+        <label class="set_format" for="">设置业态&nbsp;&nbsp;</label>
+        <input type="text" class="set_format_input" style="display:inline-block" placeholder="设置业态">
+    </div>
+    <div class="first_white_input">
+        <label class="set_money" for="">设置佣金&nbsp;&nbsp;</label>
+        <input type="number" class="set_money_input" style="display:inline-block" placeholder="设置佣金">
+        <div class="select_type"></div>
+    </div>
+</div>  
+<!--弹出层时背景层DIV---end-->  
+</body>
+<script type="text/javascript" src="../js/modal.js"></script>
+</html>
